@@ -33,8 +33,11 @@ void draw() {
   myOtherCircle.drawCircle();
 }
 
-// this is the definition for our custom MovingCircle class,
-// start with the name of the class
+// There are no changes here 
+// since the class definition doesn't change for multiple 
+// objects. (Once we have made our cookie cutter we can use
+// it as many times as we want):
+
 class MovingCircle {
   // any variable declared here will be properties of
 
