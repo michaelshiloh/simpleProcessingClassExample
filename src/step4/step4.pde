@@ -35,56 +35,7 @@ void draw() {
   }
 }
 
-// There are no changes here 
-// since the class definition doesn't change for multiple 
+// Copy the class definition from the previous step to 
+// see for yourself that no changes are necessary for multiple 
 // objects. (Once we have made our cookie cutter we can use
 // it as many times as we want):
-
-class MovingCircle {
-  // any variable declared here will be properties of
-  // objects of this type
-  float x;
-  float y;
-  float xSpeed;
-  float ySpeed;
-
-  // Now the functions that are part of this class
-  // this special function declaration has the same name
-  // as the class (MovingCircle) and it has no return type. This
-  // is known as the constructor and it's run when an
-  // object of this type is created.
-  MovingCircle(float xpos, float ypos) {
-    x = xpos;
-    y = ypos;
-    xSpeed = XSPEED;
-    ySpeed = YSPEED;
-  }
-  // Now come the functions (methods) of the object that
-  // can be called. These functions describe what the
-  // object can do:
-  // update adds the speed to the position, making
-  // our circle move around.
-  void update() {
-    x += xSpeed;
-    y += ySpeed;
-  }
-
-
-  // this function checks to see if our circle has gone off
-  // the edge of the screen, and if so reverses the speed
-
-  void checkCollisions() {
-    float r = CIRCLESIZE/2;
-    if ( (x<r) || (x>width-r)) {
-      xSpeed = -xSpeed;
-    }
-    if ( (y<r) || (y>height-r)) {
-      ySpeed = -ySpeed;
-    }
-  }
-  // This function finally draws the circle
-  void drawCircle() {
-    fill(255);
-    ellipse(x, y, CIRCLESIZE, CIRCLESIZE);
-  }
-} // End of the MovingCircle class
