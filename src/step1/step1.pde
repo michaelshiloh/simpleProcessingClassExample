@@ -1,6 +1,6 @@
 
 /*
-Example 1: bouncing balls the old fashioned way
+Step 1: A bouncing ball the old fashioned way
  */
 int INITIALXSPEED = 4;
 int INITIALYSPEED = 7;
