@@ -7,7 +7,8 @@ might do something like
 this:
 
 [Step 1](src/step1/step1.pde)
-''''
+
+````
 
 /*
 Step 1: A bouncing ball the old fashioned way
@@ -48,7 +49,7 @@ void draw() {
   ellipse(ballx, bally, CIRCLESIZE, CIRCLESIZE);
 }
 
-''''
+````
 
 Copy this code into a new Processing sketch and run it. Read the code and
 understand what it’s doing.
