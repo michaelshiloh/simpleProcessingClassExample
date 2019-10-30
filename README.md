@@ -227,9 +227,9 @@ void setup() {
   // Here is where we create the objects and populate the
   // array with them
   for (int i=0; i < myCircleArray.length; i++) {
-	  // don't start on the walls or the ball will get stuck
+    // don't start at the edge or the ball will get stuck
     myCircleArray[i] = new MovingCircle(random(CIRCLESIZE, width-CIRCLESIZE), 
-																	random(CIRCLESIZE, height-CIRCLESIZE));
+                           random(CIRCLESIZE, height-CIRCLESIZE));
   }
 }
 
