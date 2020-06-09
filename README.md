@@ -253,3 +253,10 @@ void draw() {
 // it as many times as we want):
 
 ````
+
+You don't need to create all your objects at once. Once you have
+the class, you can make objects any time you need.
+[Here](src/addBallsOnMouseButton.pde) is an example 
+that makes a new ball whenever you click a mouse button. 
+Since my array is a fixed size, I can only add 10 balls. An arrayList would
+allow my to dynamically add elements to an array, but that's another lesson.
